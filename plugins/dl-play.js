@@ -1,1 +1,169 @@
-const _0x606034=_0x1ce2;(function(_0x263e1e,_0x320eb3){const _0xbbab92=_0x1ce2,_0x149985=_0x263e1e();while(!![]){try{const _0x3c9bc9=parseInt(_0xbbab92(0x1d8))/0x1*(parseInt(_0xbbab92(0x1ea))/0x2)+parseInt(_0xbbab92(0x1d3))/0x3+parseInt(_0xbbab92(0x1ce))/0x4*(-parseInt(_0xbbab92(0x1de))/0x5)+-parseInt(_0xbbab92(0x1d1))/0x6+-parseInt(_0xbbab92(0x1e5))/0x7+-parseInt(_0xbbab92(0x1dc))/0x8*(parseInt(_0xbbab92(0x1d5))/0x9)+parseInt(_0xbbab92(0x1dd))/0xa*(parseInt(_0xbbab92(0x1e6))/0xb);if(_0x3c9bc9===_0x320eb3)break;else _0x149985['push'](_0x149985['shift']());}catch(_0x3ba25a){_0x149985['push'](_0x149985['shift']());}}}(_0x5f45,0xe9e9a));import{youtubedl,youtubedlv2}from'@bochilteam/scraper';function _0x5f45(){const _0x363a16=['sendMessage','Video\x20Not\x20Found,\x20Try\x20Another\x20Title','exp','\x20<query>','4601996yniljj','13356178gqGrXu','\x0a⊱─━━━━⊱༻●༺⊰━━━━─⊰','128kbps','downloader','4GVodzL','\x0a\x20\x20❒\x20Upload:\x20','getFile','\x0a\x20\x20❐\x20Duration:\x20','\x20naruto\x20blue\x20bird','download','videos','random','map','data','99448AJMfyO','chat','diamond','2532180Eghujo','\x0a\x20\x20❑\x20Views:\x20','4909551BhtJYC','\x0a\x20\x20❒\x20Link:\x20','503487NyJqji','help','tags','180805idLvNr','command','Downloading\x20audio\x20please\x20wait','audio/mp4','72GuzoiV','10yfcjSO','135zJPrRG','floor','✼\x20••๑⋯\x20❀\x20Y\x20O\x20U\x20T\x20U\x20B\x20E\x20❀\x20⋯⋅๑••\x20✼\x0a\x20\x20❏\x20Title:\x20'];_0x5f45=function(){return _0x363a16;};return _0x5f45();}import _0x4a086a from'yt-search';var handler=async(_0x54fc46,{conn:_0x41c5d1,command:_0x230146,text:_0x2e79b8,usedPrefix:_0x2fdb1a})=>{const _0x13efb0=_0x1ce2;if(!_0x2e79b8)throw'Use\x20example\x20'+_0x2fdb1a+_0x230146+_0x13efb0(0x1ee);await _0x54fc46['react'](rwait);let _0x1dfd6d=await _0x4a086a(_0x2e79b8),_0x4687f1=_0x1dfd6d[_0x13efb0(0x1ca)][Math[_0x13efb0(0x1df)](Math[_0x13efb0(0x1cb)]()*_0x1dfd6d['videos']['length'])];if(!_0x1dfd6d)throw _0x13efb0(0x1e2);let {title:_0x2396c7,thumbnail:_0x1000cf,timestamp:_0x1583b6,views:_0x47cc82,ago:_0x4b4c99,url:_0x5e501f}=_0x4687f1,_0x3a51e1=_0x13efb0(0x1da),_0x322acb=_0x13efb0(0x1e0)+_0x2396c7+_0x13efb0(0x1ed)+_0x1583b6+_0x13efb0(0x1d2)+_0x47cc82+_0x13efb0(0x1eb)+_0x4b4c99+_0x13efb0(0x1d4)+_0x5e501f+_0x13efb0(0x1e7);_0x41c5d1[_0x13efb0(0x1e1)](_0x54fc46[_0x13efb0(0x1cf)],{'image':{'url':_0x1000cf},'caption':_0x322acb,'footer':author},{'quoted':_0x54fc46});const _0x4b9c70=await youtubedlv2(_0x5e501f)['catch'](async _0xfde382=>await youtubedl(_0x5e501f)),_0x48aa25=await _0x4b9c70['audio'][_0x13efb0(0x1e8)][_0x13efb0(0x1c9)]();let _0x425a16={'audio':{'url':_0x48aa25},'mimetype':_0x13efb0(0x1db),'fileName':''+_0x2396c7,'contextInfo':{'externalAdReply':{'showAdAttribution':!![],'mediaType':0x2,'mediaUrl':_0x5e501f,'title':_0x2396c7,'body':_0x3a51e1,'sourceUrl':_0x5e501f,'thumbnail':await(await _0x41c5d1[_0x13efb0(0x1ec)](_0x1000cf))[_0x13efb0(0x1cd)]}}};return _0x41c5d1[_0x13efb0(0x1e1)](_0x54fc46['chat'],_0x425a16,{'quoted':_0x54fc46});};function _0x1ce2(_0x332e72,_0x2ebe5c){const _0x5f452c=_0x5f45();return _0x1ce2=function(_0x1ce279,_0x2de95c){_0x1ce279=_0x1ce279-0x1c9;let _0x33d3f1=_0x5f452c[_0x1ce279];return _0x33d3f1;},_0x1ce2(_0x332e72,_0x2ebe5c);}handler[_0x606034(0x1d6)]=['play'][_0x606034(0x1cc)](_0x19f5e4=>_0x19f5e4+_0x606034(0x1e4)),handler[_0x606034(0x1d7)]=[_0x606034(0x1e9)],handler[_0x606034(0x1d9)]=/^play$/i,handler[_0x606034(0x1e3)]=0x0,handler[_0x606034(0x1d0)]=![];export default handler;
+import fetch from "node-fetch";
+import ytdl from 'youtubedl-core';
+import yts from 'youtube-yts';
+import fs from 'fs';
+import { pipeline } from 'stream';
+import { promisify } from 'util';
+import os from 'os';
+
+const streamPipeline = promisify(pipeline);
+
+const handler = async (m, {
+    conn,
+    command,
+    text,
+    args,
+    usedPrefix
+}) => {
+    if (!text) throw `give a text to search Example: *${usedPrefix + command}* sefali odia song`;
+    conn.GURUPLAY = conn.GURUPLAY ? conn.GURUPLAY : {};
+    await conn.reply(m.chat, wait, m);
+    const result = await searchAndDownloadMusic(text);
+    const infoText = `✦ ──『 *GURU PLAYER* 』── ⚝ \n\n [ ⭐ Reply the number of the desired search result to get the Audio]. \n\n` ;
+
+const orderedLinks = result.allLinks.map((link, index) => {
+    const sectionNumber = index + 1;
+    const {
+        title,
+        url
+    } = link;
+    return `*${sectionNumber}.* ${title}`;
+});
+
+    const orderedLinksText = orderedLinks.join("\n\n");
+    const fullText = `${infoText}\n\n${orderedLinksText}`;
+    const {
+        key
+    } = await conn.reply(m.chat, fullText, m);
+    conn.GURUPLAY[m.sender] = {
+        result,
+        key,
+        timeout: setTimeout(() => {
+            conn.sendMessage(m.chat, {
+                delete: key
+            });
+            delete conn.GURUPLAY[m.sender];
+        }, 150 * 1000),
+    };
+};
+
+handler.before = async (m, {
+    conn
+}) => {
+    conn.GURUPLAY = conn.GURUPLAY ? conn.GURUPLAY : {};
+    if (m.isBaileys || !(m.sender in conn.GURUPLAY)) return;
+    const {
+        result,
+        key,
+        timeout
+    } = conn.GURUPLAY[m.sender];
+   
+    if (!m.quoted || m.quoted.id !== key.id || !m.text) return;
+    const choice = m.text.trim();
+    const inputNumber = Number(choice);
+    if (inputNumber >= 1 && inputNumber <= result.allLinks.length) {
+        const selectedUrl = result.allLinks[inputNumber - 1].url;
+        console.log("selectedUrl", selectedUrl)
+    let title = generateRandomName();
+        const audioStream = ytdl(selectedUrl, {
+            filter: 'audioonly',
+            quality: 'highestaudio',
+        });
+    
+      
+        
+        const tmpDir = os.tmpdir();
+        
+        
+        const writableStream = fs.createWriteStream(`${tmpDir}/${title}.mp3`);
+    
+        
+        await streamPipeline(audioStream, writableStream);
+
+        const doc = {
+            audio: {
+            url: `${tmpDir}/${title}.mp3`
+            },
+            mimetype: 'audio/mpeg',
+            ptt: false,
+            waveform: [100, 0, 0, 0, 0, 0, 100],
+            fileName: `${title}`,
+        
+        };
+    
+        await conn.sendMessage(m.chat, doc, { quoted: m });
+    
+    
+       
+
+        
+    } else {
+        m.reply("Invalid sequence number. Please select the appropriate number from the list above.\nBetween 1 to " + result.allLinks.length);
+    }
+};
+
+handler.help = ["play"];
+handler.tags = ["downloader"];
+handler.command = /^(play)$/i;
+handler.limit = true;
+export default handler;
+
+function formatBytes(bytes, decimals = 2) {
+    if (bytes === 0) return "0 B";
+    const k = 1024;
+    const dm = decimals < 0 ? 0 : decimals;
+    const sizes = ["B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
+    const i = Math.floor(Math.log(bytes) / Math.log(k));
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i];
+}
+
+async function searchAndDownloadMusic(query) {
+    try {
+        const { videos } = await yts(query);
+        if (!videos.length) return "Sorry, no video results were found for this search.";
+
+        const allLinks = videos.map(video => ({
+            title: video.title,
+            url: video.url,
+        }));
+
+        const jsonData = {
+            title: videos[0].title,
+            description: videos[0].description,
+            duration: videos[0].duration,
+            author: videos[0].author.name,
+            allLinks: allLinks,
+            videoUrl: videos[0].url,
+            thumbnail: videos[0].thumbnail,
+        };
+
+        return jsonData;
+    } catch (error) {
+        return "Error: " + error.message;
+    }
+}
+
+
+async function fetchVideoBuffer() {
+    try {
+        const response = await fetch(url, {
+            method: 'GET',
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
+        });
+        return await response.buffer();
+    } catch (error) {
+        return null;
+    }
+}
+
+function generateRandomName() {
+    const adjectives = ["happy", "sad", "funny", "brave", "clever", "kind", "silly", "wise", "gentle", "bold"];
+    const nouns = ["cat", "dog", "bird", "tree", "river", "mountain", "sun", "moon", "star", "cloud"];
+    
+    const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+    const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
+    
+    return randomAdjective + "-" + randomNoun;
+}
